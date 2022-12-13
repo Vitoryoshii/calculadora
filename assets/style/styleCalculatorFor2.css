@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #131313;
+  max-width: 400px;
+  height: auto;
+  width: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 35px;
+  border-radius: 15px;
+  user-select: none;
+}
+
+#displayArea {
+  width: 100%;
+  margin: 3vh 0;
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(2, minmax(40px, auto));
+  word-wrap: break-word;
+  padding-bottom: 20px;
+  border-bottom: 1px rgba(128, 128, 128, 0.116) solid;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+#displayArea > .previous-operand {
+  color: rgba(150, 150, 150, 0.87);
+  font-size: medium;
+}
+
+#displayArea .current-operand {
+  padding-top: 30px;
+  color: white;
+  font-size: xx-large;
+}
+
+.keypad-btns {
+  display: grid;
+  grid: repeat(5, 70px) / repeat(4, 70px);
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+}
+
+.keypad-btns button {
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  background-color: #474b6b;
+  color: #fff;
+  font-size: x-large;
+}
+
+.keypad-btns .fun_btn {
+  color: #000;
+  background: #ffc652;
+  font-weight: bold;
+}
+
+.keypad-btns .fun_btn-color {
+  background-color: #483d8b;
+  color: white;
+  font-weight: bold;
+}
+
+.num_btn:hover {
+  background-color: #282a3a;
+}
+
+.fun_btn:hover {
+  background-color: #ffab00;
+}
+
+.fun_btn-color:hover {
+  background-color: #191970;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #131313;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/img/iconCalculator.png" />
+    <link rel="stylesheet" href="/assets/style/styleCalculatorFor2.css" />
+    <title>calculator for 2</title>
+  </head>
+  <body>
+    <div class="container">
+      <section id="displayArea">
+        <div data-previous-operand class="previous-operand"></div>
+        <div data-current-operand class="current-operand"></div>
+      </section>
+      <section class="keypad-btns">
+        <button type="button" class="fun_btn" id="clear" data-all-clear>
+          C
+        </button>
+        <button type="button" class="fun_btn" id="backspace" data-backspace>
+          <img src="/assets/img/backspace.svg" alt="" />
+        </button>
+        <button
+          type="button"
+          class="fun_btn"
+          data-operator
+          id="porcentageOperator"
+          value="%"
+        >
+          %
+        </button>
+        <button
+          type="button"
+          class="fun_btn"
+          data-operator
+          id="divideOperator"
+          value="/"
+        >
+          /
+        </button>
+        <button
+          type="button"
+          class="fun_btn-color"
+          id="key7"
+          data-number
+          value="7"
+        >
+          7
+        </button>
+        <button
+          type="button"
+          class="fun_btn-color"
+          id="key8"
+          data-number
+          value="8"
+        >
+          8
+        </button>
+        <button
+          type="button"
+          class="fun_btn-color"
+          id="key9"
+          data-number
+          value="9"
+        >
+          9
+        </button>
+        <button
+          type="button"
+          class="fun_btn"
+          data-operator
+          id="multiplicationOperator"
+          value="*"
+        >
+          X
+        </button>
+        <button
+          type="button"
+          class="fun_btn-color"
+          id="key4"
+          data-number
+          value="4"
+        >
+          4
+        </button>
+        <button
+          type="button"
+          class="fun_btn-color"
+          id="key5"
+          data-number
+          value="5"
+        >
+          5
+        </button>
+        <button
+          type="button"
+          class="fun_btn-color"
+          id="key6"
+          data-number
+          value="6"
+        >
+          6
+        </button>
+        <button
+          type="button"
+          class="fun_btn"
+          data-operator
+          id="subtrationOperator"
+          value="-"
+        >
+          -
+        </button>
+        <button
+          type="button"
+          class="fun_btn-color"
+          id="key1"
+          data-number
+          value="1"
+        >
+          1
+        </button>
+        <button
+          type="button"
+          class="fun_btn-color"
+          id="key2"
+          data-number
+          value="2"
+        >
+          2
+        </button>
+        <button
+          type="button"
+          class="fun_btn-color"
+          id="key3"
+          data-number
+          value="3"
+        >
+          3
+        </button>
+        <button
+          type="button"
+          class="fun_btn"
+          data-operator
+          id="sumOperator"
+          value="+"
+        >
+          +
+        </button>
+        <button type="button" class="fun_btn-color" data-reverse value="+/-">
+          +/-
+        </button>
+        <button
+          type="button"
+          class="fun_btn-color"
+          id="key0"
+          data-number
+          value="0"
+        >
+          0
+        </button>
+        <button
+          type="button"
+          class="fun_btn-color"
+          id="decimalKey"
+          data-number
+          value="."
+        >
+          .
+        </button>
+        <button type="button" class="fun_btn" id="evaluate" data-evaluate>
+          =
+        </button>
+      </section>
+    </div>
+    <script src="/assets/js/calculatorFor2.js"></script>
+  </body>
+</html>
